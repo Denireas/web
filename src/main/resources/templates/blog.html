@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title th:text="blog" />
+    <title>Blog</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
@@ -13,7 +13,7 @@
             <div th:each="el : ${posts}" class="alert alert-info mt-4">
                 <h3 th:text="${el.title}"/>
                 <p th:text="${el.shortText}"/>
-                <a th:href="'/blog/' + ${el.id}">Детальнее</a>
+                <a th:href="'/blog/' + ${el.id}" class="btn btn-warning">Детальнее</a>
             </div>
     </div>
 
