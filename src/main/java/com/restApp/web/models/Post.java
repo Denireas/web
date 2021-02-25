@@ -1,7 +1,5 @@
 package com.restApp.web.models;
 
-import lombok.Getter;
-import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -55,5 +53,14 @@ public class Post {
 
     public void setViews(int views) {
         this.views = views;
+    }
+
+    public Post(String title, String shortText, String fullText) {
+        this.title = title;
+        this.shortText = shortText;
+        this.fullText = fullText;
+    }
+
+    public Post() {
     }
 }

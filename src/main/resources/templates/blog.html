@@ -10,7 +10,7 @@
 
     <div class="container mt-5">
             <h1>Blog</h1>
-            <div th:each="el : ${posts}" class="alert alert-info mt-2">
+            <div th:each="el : ${posts}" class="alert alert-info mt-4">
                 <h3 th:text="${el.title}"/>
                 <p th:text="${el.shortText}"/>
                 <a th:href="'/blog/' + ${el.id}">Детальнее</a>
